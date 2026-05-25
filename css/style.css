@@ -1,0 +1,286 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+  background-color: #f8fafc;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  min-height: 100vh;
+  background: linear-gradient(rgba(15, 23, 42, 0.78), rgba(15, 23, 42, 0.78)),
+    url("../img/chiapas-eventos.svg");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+
+.navbar {
+  width: min(1100px, 92%);
+  margin: auto;
+  padding: 22px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #facc15;
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  color: #ffffff;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.hero {
+  width: min(1100px, 92%);
+  margin: auto;
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.tag {
+  color: #facc15;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.hero h1 {
+  font-size: clamp(2.3rem, 6vw, 4.8rem);
+  line-height: 1.05;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+}
+
+.btn {
+  display: inline-block;
+  background: #16a34a;
+  color: #ffffff;
+  padding: 12px 22px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.btn:hover {
+  background: #15803d;
+  transform: translateY(-2px);
+}
+
+.btn-light {
+  background: #ffffff;
+  color: #166534;
+}
+
+.section {
+  width: min(1100px, 92%);
+  margin: 60px auto;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  color: #14532d;
+}
+
+.section-text {
+  max-width: 750px;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.card,
+.event-card,
+.contact-info,
+.contact-form {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.1);
+}
+
+.card span {
+  font-size: 2rem;
+}
+
+.card h3 {
+  margin: 10px 0;
+  color: #166534;
+}
+
+.banner {
+  text-align: center;
+  background: linear-gradient(135deg, #16a34a, #14532d);
+  color: #ffffff;
+  padding: 55px 20px;
+}
+
+.banner p {
+  margin: 10px 0 22px;
+}
+
+.page-header {
+  background: linear-gradient(135deg, #14532d, #16a34a);
+  color: #ffffff;
+}
+
+.page-title {
+  width: min(1100px, 92%);
+  margin: auto;
+  padding: 50px 0 65px;
+}
+
+.page-title h1 {
+  font-size: clamp(2.1rem, 5vw, 3.8rem);
+}
+
+.event-grid {
+  display: grid;
+  gap: 22px;
+}
+
+.event-card {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+
+.event-date {
+  min-width: 75px;
+  min-height: 75px;
+  background: #dcfce7;
+  color: #14532d;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.event-date strong {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.event-date span {
+  font-weight: 700;
+}
+
+.event-card h2 {
+  color: #14532d;
+  margin-bottom: 6px;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 25px;
+  align-items: start;
+}
+
+.contact-info p {
+  margin: 13px 0;
+}
+
+.contact-form {
+  display: grid;
+  gap: 12px;
+}
+
+.contact-form label {
+  font-weight: 700;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font: inherit;
+}
+
+.footer {
+  text-align: center;
+  background: #0f172a;
+  color: #ffffff;
+  padding: 22px;
+}
+
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: #14532d;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    display: none;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .cards,
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .event-card {
+    align-items: flex-start;
+  }
+}
