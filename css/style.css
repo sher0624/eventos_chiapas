@@ -156,6 +156,83 @@ a {
   color: #166534;
 }
 
+.carousel {
+  position: relative;
+  margin-top: 35px;
+  overflow: hidden;
+  border-radius: 18px;
+  min-height: 320px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.12);
+}
+
+.carousel-track {
+  position: relative;
+  min-height: 320px;
+}
+
+.carousel-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 320px;
+  display: block;
+  object-fit: cover;
+  background: #dcfce7;
+}
+
+.carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  padding: 28px;
+  color: #ffffff;
+  background: linear-gradient(transparent, rgba(15, 23, 42, 0.82));
+}
+
+.carousel-caption h3 {
+  font-size: 1.6rem;
+  margin-bottom: 6px;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 50%;
+  color: #14532d;
+  background: rgba(255, 255, 255, 0.88);
+  cursor: pointer;
+  font-size: 1.4rem;
+  transform: translateY(-50%);
+}
+
+.carousel-btn:hover {
+  background: #ffffff;
+}
+
+.carousel-prev {
+  left: 16px;
+}
+
+.carousel-next {
+  right: 16px;
+}
+
 .banner {
   text-align: center;
   background: linear-gradient(135deg, #16a34a, #14532d);
@@ -282,5 +359,18 @@ a {
 
   .event-card {
     align-items: flex-start;
+  }
+
+  .carousel,
+  .carousel-track {
+    min-height: 260px;
+  }
+
+  .carousel-slide img {
+    height: 260px;
+  }
+
+  .carousel-caption {
+    padding: 22px;
   }
 }
