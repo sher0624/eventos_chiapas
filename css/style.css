@@ -219,35 +219,110 @@ a {
 }
 
 .contact-layout {
+  width: min(1100px, 92%);
+  margin: 60px auto;
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 25px;
-  align-items: start;
+  grid-template-columns: 0.9fr 1.3fr;
+  gap: 45px;
+  align-items: center;
+  background: #050505;
+  color: #ffffff;
+  padding: 55px;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-layout::before {
+  content: "CONTACTO";
+  position: absolute;
+  top: -20px;
+  left: 35px;
+  font-size: 7rem;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.08);
+  z-index: 0;
+}
+
+.contact-info,
+.contact-form {
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-info h2,
+.contact-form h2 {
+  color: #d4af37;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  text-transform: uppercase;
 }
 
 .contact-info p {
-  margin: 13px 0;
+  color: #e5e7eb;
+  margin-bottom: 16px;
 }
 
-
-.contact-form {
-  display: grid;
-  gap: 12px;
-}
-h1,p{
-  text-align: center;
-}
 .contact-form label {
-  font-weight: 700;
+  color: #ffffff;
+  font-weight: 600;
 }
 
 .contact-form input,
 .contact-form textarea {
+  background: transparent;
+  border: 2px solid #6b7280;
+  color: #ffffff;
+  border-radius: 0;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #9ca3af;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.input-group input,
+.input-group textarea {
   width: 100%;
-  padding: 12px;
-  border: 1px solid #cbd5e1;
-  border-radius: 10px;
-  font: inherit;
+  padding: 14px;
+  background: transparent;
+  border: 2px solid #6b7280;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.input-group textarea {
+  resize: none;
+}
+
+.contact-form .btn {
+  margin-top: 10px;
+  align-self: flex-start;
+}
+
+.contact-form .btn:hover {
+  background: #facc15;
 }
 
 .footer {

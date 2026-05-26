@@ -16,3 +16,17 @@ if (form) {
     form.reset();
   });
 }
+const formulario = document.getElementById("contactForm");
+
+formulario.addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const confirmar = confirm("¿Estás seguro de enviar esta información?");
+
+  if (confirmar) {
+    alert("Información enviada correctamente ✅");
+    formulario.reset();
+  } else {
+    alert("Envío cancelado ❌");
+  }
+});
