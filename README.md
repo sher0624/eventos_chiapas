@@ -42,9 +42,9 @@ Aplicar el uso de Git y GitHub en un entorno colaborativo realista, usando ramas
 El sitio se publicará desde la rama `main` usando GitHub Pages.
 
 ## Coevaluación del equipo
-| Integrante | Actividades realizadas | Puntaje |
+| Integrantes | Actividades realizadas | Puntaje |
 |---|---|---|
-| Integrante 1 | Desarrollo de navegación e inicio | 10 |
-| Integrante 2 | Desarrollo de eventos | 10 |
-| Integrante 3 | Desarrollo de contacto | 10 |
-| Integrante 4 | README, CONTRIBUTING y revisión | 10 |
+| Alfredo Ton Gomez | Desarrollo de navegación e inicio | 10 |
+| Sherlyn Guillen Merida | Desarrollo de eventos | 10 |
+| Miriam Janneth Gomez Aguilar | Desarrollo de contacto | 10 |
+| Joan Sebastian Gomez Hernandez | README, CONTRIBUTING y revisión | 10 |
