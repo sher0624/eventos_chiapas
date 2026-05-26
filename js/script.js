@@ -7,13 +7,20 @@ if (menuBtn && navLinks) {
   });
 }
 
-const form = document.querySelector(".contact-form");
+const formulario = document.getElementById("contactForm");
 
-if (form) {
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    alert("Mensaje enviado correctamente. Gracias por contactar a Eventos Chiapas.");
-    form.reset();
+if (formulario) {
+  formulario.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const confirmar = confirm("¿Estás seguro de enviar esta información?");
+
+    if (confirmar) {
+      alert("Información enviada correctamente ✅");
+      formulario.reset();
+    } else {
+      alert("Envío cancelado ❌");
+    }
   });
 }
 
