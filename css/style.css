@@ -229,11 +229,14 @@ a {
   margin: 13px 0;
 }
 
+
 .contact-form {
   display: grid;
   gap: 12px;
 }
-
+h1,p{
+  text-align: center;
+}
 .contact-form label {
   font-weight: 700;
 }
