@@ -16,7 +16,7 @@ Aplicar el uso de Git y GitHub en un entorno colaborativo realista, usando ramas
 |---|---|---|
 | Joan Sebastian Gomez Herandez | Header / navegación | 100% |
 | Alfredo Ton Gomez | Página de eventos | 100% |
-| Sherlun Guillen Merida | Página de contacto | 100% |
+| Sherlyn Guillen Merida | Página de contacto | 100% |
 | Miriam Janneth Gomez Aguilar | Documentación y revisión | 100% |
 
 ## Tecnologías utilizadas
