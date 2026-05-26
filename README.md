@@ -14,10 +14,10 @@ Aplicar el uso de Git y GitHub en un entorno colaborativo realista, usando ramas
 ## Participantes
 | Nombre | Rol | Participación |
 |---|---|---|
-| Integrante 1 | Header / navegación | 100% |
-| Integrante 2 | Página de eventos | 100% |
-| Integrante 3 | Página de contacto | 100% |
-| Integrante 4 | Documentación y revisión | 100% |
+| Joan Sebastian Gomez Herandez | Header / navegación | 100% |
+| Alfredo Ton Gomez | Página de eventos | 100% |
+| Sherlun Guillen Merida | Página de contacto | 100% |
+| Miriam Janneth Gomez Aguilar | Documentación y revisión | 100% |
 
 ## Tecnologías utilizadas
 - HTML5
