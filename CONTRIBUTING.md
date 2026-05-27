@@ -29,6 +29,8 @@ Usar nombres claros y relacionados con la sección:
 - `rama-documentacion`
 - `rama-conflicto-a`
 - `rama-conflicto-b`
+- `rama-Index`
+
 
 ## Reglas para mensajes de commit
 Los mensajes deben ser descriptivos y explicar el cambio realizado.
