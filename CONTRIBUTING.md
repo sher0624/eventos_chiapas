@@ -29,13 +29,23 @@ Usar nombres claros y relacionados con la sección:
 - `rama-documentacion`
 - `rama-conflicto-a`
 - `rama-conflicto-b`
+- `rama-Index`
+
 
 ## Reglas para mensajes de commit
 Los mensajes deben ser descriptivos y explicar el cambio realizado.
 
-Ejemplos:
-- `Agrega estructura inicial del sitio web`
-- `Diseña sección principal del index`
-- `Agrega tarjetas de eventos`
-- `Crea formulario de contacto`
-- `Corrige estilos responsivos del menú`
+## Tipos de commits
+
+| Tipo | Descripción | Ejemplo |
+|---|---|---|
+| `feat` | Agrega una nueva funcionalidad | `feat: agrega sección de eventos` |
+| `fix` | Corrige errores o bugs | `fix: corrige error del menú responsive` |
+| `style` | Cambios visuales o estilos CSS | `style: mejora diseño del formulario` |
+| `docs` | Cambios en documentación | `docs: actualiza README del proyecto` |
+| `refactor` | Mejora interna del código sin cambiar funcionalidad | `refactor: reorganiza estructura del navbar` |
+| `test` | Agrega o modifica pruebas | `test: agrega validación del formulario` |
+| `merge` | Fusión entre ramas | `merge: fusiona rama-eventos con principal` |
+
+## Estructura recomendada de commits:
+tipo: descripción breve del cambio
